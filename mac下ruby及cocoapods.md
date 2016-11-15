@@ -23,3 +23,9 @@ mac下ruby及cocoapods
 3、消除警告信息
 
 ​	gem uninstall cocoapods-deintegrate
+
+4、The `master` repo requires CocoaPods 1.0.0 - (currently using 0.39.0)
+    http://blog.cocoapods.org/Sharding/
+    add:
+        source "https://github.com/CocoaPods/Old-Specs" 
+    To the top of your Podfile, and CocoaPods will only use the archived repo, instead of using the new repo structure.source "https://github.com/CocoaPods/Old-Specs"
